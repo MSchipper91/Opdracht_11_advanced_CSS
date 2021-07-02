@@ -1,0 +1,101 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 200px;
+    grid-template-areas: 
+    ". cc cm .";
+}
+
+.contact-c {
+    display: grid;
+    border: lightgray 1px solid;
+    border-radius: 2%;
+    margin: 5px;
+    grid-area: cc;
+    grid-template-columns: 10px 1fr 1fr 70px;
+    grid-template-areas: 
+    ". h2 . fc"
+    ". h3 . fc"
+    ". p p p"
+    "hr hr hr hr"
+    ". ap de ."
+    ;
+}
+
+.contact-m {
+    display: grid;
+    border: lightgray 1px solid;
+    border-radius: 2%;
+    margin: 5px;
+    grid-area: cm;
+    grid-template-columns: 10px 1fr 1fr 70px;
+    grid-template-areas: 
+    ". h2 . fm"
+    ". h3 . fm"
+    ". p p p"
+    "hr hr hr hr"
+    ". ap de ."
+    ;
+}
+
+h2 {
+    margin: 10px 10px 3px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    grid-area: h2;
+    font-size: 20px;
+}
+
+h3 {
+    margin: 3px 10px 3px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightgray;
+    font-size: 15px;
+    grid-area: h3;
+}
+
+.carla {
+    grid-area: fc;
+    margin: 10px;
+}
+
+.marijn {
+    grid-area: fm;
+    margin: 10px;
+}
+
+p {
+    margin: 15px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgray;
+    font-size: 15px;
+    grid-area: p;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid lightgray;
+    margin: 20px 0px;
+    grid-area: hr;
+}
+
+.aprove {
+    grid-area: ap;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    border: green 2px solid;
+    border-radius: 7%;
+    margin: 5px 0px 5px 50px;
+    text-align: center;
+}
+
+.decline {
+    grid-area: de;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    border: red 2px solid;
+    border-radius: 7%;
+    margin: 5px 50px 5px 0px;
+    text-align: center;
+}
